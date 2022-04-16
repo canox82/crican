@@ -1,23 +1,21 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import ContainerBlock from "../components/ContainerBlock";
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
+    <ContainerBlock
+      title="Cristian Canossini - Webdesign, Grafica e Rendering"
+      description="Creo siti, curo grafiche e realizzo rendering"
+    >
+      <div className="text-gray-500 text-sm">
+        <br/>
+        <br/>
+        <br/>
+        In lavorazione...
+        <br/>
+        <br/>
+        <br/>
+      </div>
+    </ContainerBlock>
+  );
 }

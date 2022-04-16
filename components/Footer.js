@@ -1,11 +1,12 @@
-import styles from './Footer.module.css'
+import React from "react";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-export default function Footer() {
-  return (
-    <>
-      <footer className={styles.footer}>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
-      </footer>
-    </>
-  )
+export default function Footer({ children, ...customMeta }) {
+    const router = useRouter();
+    return (
+        <div className="w-full text-center">
+            CriCan - Grafica e Webdesign
+        </div>
+    );
 }
